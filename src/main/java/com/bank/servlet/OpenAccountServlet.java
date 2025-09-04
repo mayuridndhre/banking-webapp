@@ -2,7 +2,6 @@ package com.bank.servlet;
 
 import com.bank.dao.AccountDAO;
 import com.bank.model.Account;
-
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.IOException;
@@ -24,11 +23,11 @@ public class OpenAccountServlet extends HttpServlet {
 
             accountDAO.create(a);
 
-            req.setAttribute("message", "Account opened successfully! ID = " + a.getId());
+            req.setAttribute("message", "✅ Account opened successfully! ID = " + a.getId());
             req.getRequestDispatcher("success.jsp").forward(req, resp);
 
         } catch (Exception e) {
-            req.setAttribute("error", "Error opening account: " + e.getMessage());
+            req.setAttribute("error", "❌ Error opening account: " + e.getMessage());
             req.getRequestDispatcher("error.jsp").forward(req, resp);
         }
     }

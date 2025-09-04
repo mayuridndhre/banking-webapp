@@ -6,7 +6,7 @@
 
     <display-name>Banking WebApp</display-name>
 
-    <!-- Register Servlet -->
+    <!-- Register -->
     <servlet>
         <servlet-name>RegisterServlet</servlet-name>
         <servlet-class>com.bank.servlet.RegisterServlet</servlet-class>
@@ -16,7 +16,7 @@
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
 
-    <!-- Open Account Servlet -->
+    <!-- Open Account -->
     <servlet>
         <servlet-name>OpenAccountServlet</servlet-name>
         <servlet-class>com.bank.servlet.OpenAccountServlet</servlet-class>
@@ -24,6 +24,36 @@
     <servlet-mapping>
         <servlet-name>OpenAccountServlet</servlet-name>
         <url-pattern>/openAccount</url-pattern>
+    </servlet-mapping>
+
+    <!-- Deposit -->
+    <servlet>
+        <servlet-name>DepositServlet</servlet-name>
+        <servlet-class>com.bank.servlet.DepositServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DepositServlet</servlet-name>
+        <url-pattern>/deposit</url-pattern>
+    </servlet-mapping>
+
+    <!-- Withdraw -->
+    <servlet>
+        <servlet-name>WithdrawServlet</servlet-name>
+        <servlet-class>com.bank.servlet.WithdrawServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WithdrawServlet</servlet-name>
+        <url-pattern>/withdraw</url-pattern>
+    </servlet-mapping>
+
+    <!-- Transfer -->
+    <servlet>
+        <servlet-name>TransferServlet</servlet-name>
+        <servlet-class>com.bank.servlet.TransferServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TransferServlet</servlet-name>
+        <url-pattern>/transfer</url-pattern>
     </servlet-mapping>
 
 </web-app>
