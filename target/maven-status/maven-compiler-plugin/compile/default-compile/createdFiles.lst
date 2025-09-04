@@ -1,4 +1,7 @@
 com\bank\dao\DBConnection.class
 com\bank\dao\CustomerDAO.class
 com\bank\servlet\RegisterServlet.class
+com\bank\dao\AccountDAO.class
+com\bank\model\Account.class
+com\bank\servlet\OpenAccountServlet.class
 com\bank\model\Customer.class

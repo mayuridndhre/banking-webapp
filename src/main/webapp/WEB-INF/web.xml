@@ -16,4 +16,14 @@
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
 
+    <!-- Open Account Servlet -->
+    <servlet>
+        <servlet-name>OpenAccountServlet</servlet-name>
+        <servlet-class>com.bank.servlet.OpenAccountServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OpenAccountServlet</servlet-name>
+        <url-pattern>/openAccount</url-pattern>
+    </servlet-mapping>
+
 </web-app>
